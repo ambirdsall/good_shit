@@ -1,7 +1,7 @@
 # Good Tricks
 Shit I have found useful, recorded for future reference. Focused on tools and workflows I like to use. Feel free to open a PR if you have a good trick, too!
 
-## Change a variable name project-wide
+#### Change a variable name project-wide
 1. In project root dir: `$ vim $(ack 'bad_variable_name' -l)`
 2. In vim: `:argdo %s/bad_variable_name/good_variable_name/gc | update`
 
