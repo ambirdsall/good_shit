@@ -8,3 +8,14 @@ Shit I have found useful, recorded for future reference. Focused on tools and wo
 Step 1: open every file containing `bad_variable_name` in vim.
 
 Step 2: `argdo` applies the command to every file given as an argument; `c` flag can be left off, but then make sure to `git add -p`; piping to `update` saves each file after making all substitutions. If you don't do the `ack` bit at first, add an `e` flag to the `:%s` to suppress any errors from files without a match.
+
+#### Convert Ruby hash syntax from 1.8-style to 1.9-
+s/o https://robots.thoughtbot.com/convert-ruby-1-8-to-1-9-hash-syntax
+##### In vim, one file:
+```vim
+:%s/:\([^ ]*\)\(\s*\)=>/\1:/g
+```
+##### In terminal, whole project:
+```sh
+perl -pi -e 's/:([\w\d_]+)(\s*)=>/\1:/g' **/*.rb
+```
