@@ -1,6 +1,14 @@
 # Good Tricks
 Shit I have found useful, recorded for future reference. Focused on tools and workflows I like to use. Feel free to open a PR if you have a good trick, too!
 
+#### Get rid of incorrect HTML-escaping on [Pro Git](https://git-scm.com/book/en/v2/)
+Fire up the console and copy-paste. `&gt;` is but one of many, but it's the most common one I've run into.
+```js
+$('pre').each(function(idx, pre) {
+$(pre).text($(pre).text().replace(/&gt;/g, '>'))
+})
+```
+
 #### Change a variable name project-wide
 1. In project root dir: `$ vim $(ack 'bad_variable_name' -l)`
 2. In vim: `:argdo %s/bad_variable_name/good_variable_name/gc | update`
