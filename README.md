@@ -5,6 +5,7 @@ Shit I have found useful, recorded for future reference. Focused on tools and wo
 Fire up the console and copy-paste. `&gt;` is but one of many, but it's the most common one I've run into.
 ```js
 $('pre').each(function(idx, pre) {
+$(pre).text($(pre).text().replace(/&lt;/g, '<'))
 $(pre).text($(pre).text().replace(/&gt;/g, '>'))
 })
 ```
