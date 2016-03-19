@@ -1,6 +1,23 @@
 # Good Tricks
 Shit I have found useful, recorded for future reference. Focused on tools and workflows I like to use. Feel free to open a PR if you have a good trick, too!
 
+#### extending vim's command language
+| Verb | Meaning |
+|------|--------|
+| `gc` (`cm`?) | [comment](https://github.com/tpope/vim-commentary)
+| `cx` | [exchange](https://github.com/tommcdo/vim-exchange)
+| `gr` | [go replace (from register)](https://github.com/vim-scripts/ReplaceWithRegister)
+| `gs` | [go sort](https://github.com/christoomey/vim-sort-motion)
+| `gt` | [titlecase](https://github.com/christoomey/vim-titlecase)
+| `cp` | [system clipboard](https://github.com/christoomey/vim-system-copy)
+
+
+| Text Object | Meaning |
+|------|---|
+| `ae` | [entire file](https://github.com/kana/vim-textobj-entire)
+| `i` | [contiguous indent level](https://github.com/kana/vim-textobj-indent)
+| `l` | [line, ignoring leading whitespace](https://github.com/kana/vim-textobj-line)
+
 #### Get rid of incorrect HTML-escaping on [Pro Git](https://git-scm.com/book/en/v2/)
 Fire up the console and copy-paste. `&gt;` is but one of many, but it's the most common one I've run into.
 ```js
