@@ -1,4 +1,4 @@
-# Good Tricks
+# Good Shit
 Shit I have found useful, recorded for future reference. Focused on tools and workflows I like to use. Feel free to open a PR if you have a good trick, too!
 
 #### extending vim's command language
